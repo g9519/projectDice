@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="scripts/jquery-3.4.1.min.js" defer></script>
+<script src="scripts/main.js" defer="defer"></script>
+
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="players">
+            <div class="player1">
+        <h1 id="msg">YOU</h1>
+
+        <div class="diceContainer">
+                      <!-- <div id="p1Dice1" class="dice active">
+                    
+                </div> -->
+                <!-- <div id="p1Dice2" class="dice active"> -->
+                    <img src="/images/d1.png" alt="p1dice1" id="p1Dice1" class="dice active">
+
+                    <img src="/images/d2.png" alt="p1die" id="p1Dice2" class="dice active">
+                <!-- </div>        -->
+        </div>
+  
+                 <h2>
+                    P1 Score: <span id="p1Score">0</span>
+                </h2>
+                <h1>
+                    P1 Total: <span id="p1Total">0</span>
+                </h1>
+
+
+            </div>
+            <div class="player2">
+                <h1 id="msg">Opponent</h1>
+
+                <div class="diceContainer">
+                <!-- 
+                <div id="p2Dice1" class="dice active">
+                    ·
+                </div>
+                <div id="p2Dice2" class="dice active">
+                    · -->
+                    <img src="/images/d3.png" alt="p1dice1" id="p2Dice1" class="dice active">
+
+                    <img src="/images/d4.png" alt="p1die" id="p2Dice2" class="dice active">
+
+                <!-- </div> -->
+                </div>
+
+                <h2>
+                    P2 Score: <span id="p2Score">0</span>
+                </h2>
+                <h1>
+                    P2 Total: <span id="p2Total">0</span>
+                </h1>
+
+            </div>
+     
+        </div>
+       <div id="roundContainer">
+                <h2 id="round">Round: 0</h2>
+            </div>
+        <button type="button" class="button" id="rollbtn">Roll Dice</button>
+        <button type="button" class="button" id="newGamebtn">New Game</button>
+
+
+
+    </div>
+
+    <aside id="popup">
+        <h2>How to play</h2>
+        <a id="closePopUp">Lets Play!</a>
+        <p>Its YOU vs The Computer! <br>
+            Roll the dice 3 times, whoever has the highest score after 3 rounds is declared the winner!<br>
+            However, Roll a 1 and no points are scored that round. <br>
+            Roll a pair and the score is doubled for that round!<br>
+            To roll the dice, click 'Roll Dice'. Start a new game at any time by hitting 'New Game'</p>
+    </aside>
+    
+</body>
+</html>

@@ -1,0 +1,132 @@
+/*
+step 1
+declare some SASS Variables
+*/
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding-top: 60px;
+  background-color: #73877B;
+}
+
+img {
+  width: 51px;
+  height: 51px;
+}
+
+.container {
+  width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #fbd5b2;
+  padding: 50px;
+  box-shadow: #173f4d -2px 6px 18px 3px;
+  border-radius: 10%;
+}
+
+.players {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  /* justify-content:center; */
+}
+
+.diceContainer {
+  display: flex;
+}
+
+.dice {
+  border-radius: 15%;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(248, 255, 240);
+  margin: 25px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.player1, .player2 {
+  /* border:solid #173f4d; */
+  /* margin: 20px; */
+}
+
+button {
+  margin-top: 30px;
+  border: none;
+  padding: 20px;
+  font-size: 18px;
+  /* height: 40px; */
+  color: #173f4d;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+#rollbtn:disabled {
+  /* background-color: #73877B;
+  color: #173f4d8b; */
+  display: none;
+}
+
+#rollbtn, #newGamebtn {
+  background-color: #f36767;
+}
+
+#newGamebtn {
+  /* background-color: #f36767; */
+}
+
+#newGamebtn:disabled {
+  display: none;
+}
+
+#rollbtn:hover, #newGamebtn:hover {
+  background-color: rgba(243, 103, 103, 0.4784313725);
+}
+
+.active {
+  box-shadow: #173f4d 0px 6px 5px 3px;
+  border-radius: 7px;
+}
+
+#popup {
+  width: 400px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  background-color: #f36767;
+  color: #fbd5b2;
+  padding: 1% 5% 25px;
+  border: solid 1px #173f4d;
+  display: none;
+  box-shadow: #173f4d 0px 6px 5px 3px;
+  border-radius: 7px;
+}
+
+#closePopUp {
+  position: absolute;
+  top: 80%;
+  right: 6%;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+#popup a {
+  background-color: #73877B;
+  color: #173f4d;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+#popup a:hover {
+  background-color: #fbd5b2;
+}
